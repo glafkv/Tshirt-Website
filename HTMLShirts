@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Product</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="product">Product</h1>
+        
+   <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a class="active"  href="shirts.html">Product</a></li>
+            <li><a href="signin.html">Sign In!</a></li>
+            <li style="float:right"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        
+        
+        <br />
+        <br />
+        <br />
+        <h1 class="products">Choose from our thousands of products online!</h1> 
+        <h3 class="custom">Keep in mind, these products are customizable!</h3>
+        <br /> <br /> 
+        
+        <div class="gallery">
+        <img src="http://www.smashvintage.com/image/cache/data/shirts/women-tshirt-main-520x520.jpg" alt="girl in shirt" width="300" height="200">
+        <div class="desc">Women's Blue T-Shirt</div>
+        <div class="desc">Price: $5.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://i5.walmartimages.com/asr/418874a9-bfb7-429e-aa3e-2f9ea7b66fc4_1.7e6fd092a5d5e618ff867aff937edda5.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="mens tshirt" width="300" height="200">
+        <div class="desc">Men's Black T-Shirt</div>
+        <div class="desc">Price: $6.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://i5.walmartimages.com/asr/a087ffac-19be-45fa-b44b-57e6fd5441ec_1.17cb68e003859d1fae04f11909f88391.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="kids tshirt" width="300" height="200">
+        <div class="desc">Kid's Red T-Shirt</div>
+        <div class="desc">Price: $3.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://i5.walmartimages.com/asr/52236b8b-d014-41c3-819c-b267613845d9_1.a51222559ed6451440ce0fb770410927.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="women's sweatpants" width="300" height="200">
+        <div class="desc">Women's Pink Sweatpants</div>
+        <div class="desc">Price: $7.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://i5.walmartimages.com/asr/ce2b6313-7da9-472f-a065-0e8fc7dc690e_1.863ca6a6075fc9d54b886ca8a2fa4684.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="men's sweatpants" width="300" height="200">
+        <div class="desc">Men's Grey Sweatpants</div>
+        <div class="desc">Price: $8.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://i5.walmartimages.com/asr/2eb94ebc-9aeb-46e1-9a27-b95222fb663b_1.4de2242b938743635ed60cd45372e9b1.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="kid's sweatpants" width="300" height="200">
+        <div class="desc">Kid's Tan Sweatpants</div>
+        <div class="desc">Price: $5.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://3.imimg.com/data3/WF/CK/MY-6374205/589-1876_pi_tps2261403-500x500.jpeg" alt="white mug" width="300" height="200">
+        <div class="desc">Plain White Mug</div>
+        <div class="desc">Price: $9.99</div>
+        </div>
+        
+        <div class="gallery">
+        <img src="https://i5.walmartimages.com/asr/02dcc74d-dee6-42e5-8360-f35b752befb5_1.844b46450454832f79b5c5367800038d.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF" alt="cup" width="300" height="200">
+        <div class="desc">Tumbler Cup</div>
+        <div class="desc">Price: $19.99</div>
+        </div>
+    
+        <div class="gallery">
+        <img src="https://mms-cloudfront.customink.com/mms/images/catalog/778578d00963f94a363388e44c6d1400/colors/103601/views/front.jpg?ixlib=rails-2.1.4&w=470&h=470&fit=crop&dpr=1&bg=ffffff&fm=pjpg&q=39&auto=compress" alt="can cooler" width="300" height="200">
+        <div class="desc">Coolie Cup</div>
+        <div class="desc">Price: $1.99</div>
+        </div>
+    
+        
+        
+        
+        
+        <br /> <br /> <br /><br /> <br /><br /><br />
+     <br /> <br /> <br /> <br /> <br />
+   <footer><p>&copy;2018, KBD, Maryville, IL, 62062</p></footer>
+    </body>
+
+
+       
+        
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
