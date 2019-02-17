@@ -1,0 +1,105 @@
+window.onload = function(){
+    document.getElementById("resetbutton").onclick = resetGame;
+}
+
+/*Create an array of images*/
+var checked = [];
+var back = "https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg";
+var images = []; 
+images[0]="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&h=350";
+images[1]="https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?auto=compress&cs=tinysrgb&h=350"; images[2]="https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg";
+images[3]="https://www.nationalgeographic.com/content/dam/animals/thumbs/rights-exempt/mammals/d/domestic-dog_thumb.jpg";
+images[4]="https://pbs.twimg.com/profile_images/846146544072101888/0sLpdiu1_400x400.jpg";
+images[5]="https://pbs.twimg.com/profile_images/846146544072101888/0sLpdiu1_400x400.jpg";
+images[6]="https://www.what-dog.net/Images/faces2/scroll0015.jpg"
+images[7]="https://www.what-dog.net/Images/faces2/scroll0015.jpg";
+images[8]="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi";
+images[9]="https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/Common-dog-behaviors-explained.jpg?itok=FSzwbBoi";
+images[10]="http://www.insidedogsworld.com/wp-content/uploads/2016/03/Dog-Pictures.jpg"
+images[11]="http://www.insidedogsworld.com/wp-content/uploads/2016/03/Dog-Pictures.jpg";
+images[12]="https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all&w=782";
+images[13]="https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all&w=782"
+images[14]="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKrarG6z-Wx-Jzy7QyDEf1ZVQCui6d8rFZdHkOD9utNJV8RmxE9g";
+images[15]="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKrarG6z-Wx-Jzy7QyDEf1ZVQCui6d8rFZdHkOD9utNJV8RmxE9g";
+/*Declare variables*/
+var press = 0;
+var clickOne;
+var clickTwo;
+var matches = 0;
+var index = 0;
+/*Shuffle the images*/
+function shuffle(array){
+    var m = array.length, t, i;
+    
+    while(m){
+        i = Math.floor(Math.random() * m--)
+        
+        t = array[m];
+        array[m] = array[i];
+        array[i] = t;
+    }
+    return array;
+}
+shuffle(images);
+
+/*Don't let user click same image twice. Turn images*/
+function choice(pick){
+    for(i = 0; i <= 15; i++){
+        if(checked[i] == pick){
+            return;
+        }
+    }
+    if(press > 1){
+        return;
+    }
+    else if(press == 0){
+        
+        clickOne = pick;
+        document.getElementById('img'+pick).src = images[pick];
+        press = 1;
+    }
+    else if(press == 1){
+        clickTwo = pick;
+        if(clickTwo == clickOne){
+            return;
+        }
+        document.getElementById('img'+pick).src = images[pick];
+        press = 2;
+        check();
+    }
+}
+/*Check if the images are equal. If they are, keep them. If not, flip them back over*/
+function check(){
+    if(images[clickTwo] == images[clickOne]){
+        press = 0;
+        matches++;
+        checked[index] = clickOne;
+        index++;
+        checked[index] = clickTwo;
+        index++;
+        if(matches == 8){
+            document.getElementById("resetbutton").style.visibility='visible';
+        }
+    }
+    else{
+        function flipBack(){
+            document.getElementById('img'+clickOne).src = back;
+            document.getElementById('img'+clickTwo).src = back;
+            press = 0;
+        }
+        setTimeout(flipBack,700);
+    }
+}
+
+/*If the user clicks all of them, have the reset button pop up.*/
+function resetGame(){
+    for(var i = 0; i<= 15; i++){
+        document.getElementById('img'+i).src = back;
+        checked[i] = -1;
+    }
+    document.getElementById("resetbutton").style.visibility='hidden';
+    shuffle(images);
+    press = 0;
+    matches = 0;
+}
+
