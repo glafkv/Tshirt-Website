@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Sign In!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script type = "text/javascript" src = "registration.js"></script>
+        
+    </head>
+    <body>
+        <h1 id="signin">Sign In!</h1>
+        
+   <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shirts.html">Product</a></li>
+            <li><a class="active"  href="signin.html">Sign In!</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li style="float:right"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <br />
+        <br />
+        <br />
+        <h2 id="registerhere">Sign in to access your account!
+        </h2>
+        <br/>
+        <br />
+        <br />
+        <br />
+        <section id="register">
+        <form method="POST" action="index.php">
+            <p>
+       
+        <label>Email:</label>
+        <input type="text" name="Email" required>
+            <span id="email1error">*</span><br>
+        
+        <label>Password:</label>
+        <input type="password" name="Password" required>
+            <span id="passworderror">*</span><br>
+        
+       
+         <input type="submit" name="submit">
+   </p>
+    </form>
+     
+        
+       </section> 
+        
+    <br /><br /><br />       
+        <footer>&copy;2018, KBD, Maryville, IL, 62062</footer>
+        <script type = "text/javascript" src = "registrationn.js"></script>
+     </body>
+
+</html>
