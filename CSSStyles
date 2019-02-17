@@ -1,0 +1,188 @@
+/*This designs the navigation menu. */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:steelblue;
+    font-weight: bold;
+}
+#nav_menu li{
+    float: left;
+    border-right: 2px solid #bbb;
+}
+#nav_menu li:last-child {
+    border-right: none;
+}
+#nav_menu li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+}
+
+#nav_menu a:hover {
+    font-style: italic;
+}
+#nav_menu a.active {
+    background-color: white;
+}
+/*This is the design for all the bodies of the pages. */
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: lightcyan;
+}
+#KBD,#contact,#registration,#product, #signin {
+    text-align: center;
+    color: darkslategrey;
+    background-color: #F1F1F1;
+    padding: 20px;
+}
+/*This is for the index.html design page. */
+#tag {
+    line-height: 0.1;
+    text-align: center;
+}
+#aboutparagraph {
+    text-align: center;
+    color: darkcyan;
+}
+#products {
+   
+    text-decoration: underline;
+}
+.image1 {
+    display: inline-block;
+    float: inherit;
+    width: 45%;
+}
+.image2 {
+    display: inline-block;
+    float: inherit;
+    width: 20%;
+}
+.list2 {
+    text-decoration: underline;
+    text-align: center;
+}
+.wholelist {
+    text-align: center;
+    list-style-position: inside;
+}
+/*Style for product page*/
+.products{ 
+     text-align: center;
+    color: darkcyan;
+} 
+.custom {
+    text-align: center;
+    font-weight: normal;
+    color: darkcyan;
+}
+
+div.gallery {
+    margin: 75px;
+    margin-left: 100px;
+    
+    border: 4px solid #ccc;
+    float: left;
+    width: 250px;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 8px;
+    text-align: center;
+}
+
+/*Begin style for contact page. */
+#contactus {
+    text-align: center;
+    color: crimson;
+}
+#contactinfo {
+    text-align: center;
+}
+#allinfo {
+    text-align: center;
+}
+#personalinfo {
+    text-align: center;
+    font-weight: lighter;
+    
+}
+/*Registration design.*/
+
+#registerhere {
+   text-align: center;
+   color: crimson;
+}
+section {
+    margin: 0 auto;
+    width: 900px;
+    border: 5px solid lightblue;
+    padding: 2em 1em;
+}
+
+label {
+    float: left;
+    width: 10em;
+    font-weight: bold;
+}
+span {
+    color: red;
+}
+
+input[type=text]{
+    
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=password]{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit] {
+    font-weight: bold;
+    background-color: darkblue;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover {
+    background-color: lavender;
+}
+
+#info {
+     text-align: center;
+    font-weight: lighter;
+}
+
+
+
+/*Footer for all of the pages. */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+}
