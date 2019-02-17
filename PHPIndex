@@ -1,0 +1,53 @@
+<?php
+    session_start();
+    $db = mysqli_connect("localhost", "root", "", "hw4");
+    /*Make sure it connects to database*/
+    if(mysqli_connect_errno()){
+        print "Connect failed: " . mysqli_connect_error();
+        exit;
+    }
+     
+    if(isset($_POST['Email'])){
+        /*Call variables*/
+        $Email = $_POST['Email'];
+        $Password = $_POST['Password'];
+        
+        /*Check to see if the email is in there*/
+        $query = "SELECT * FROM `user` WHERE Email='$Email'";
+        $result = mysqli_query($db, $query);
+        $count = mysqli_num_rows($result);
+        
+        /*If the email is not in there, send them to signup*/
+        if($count == 0){
+            header("Location: signup.php");
+        } 
+        else
+            {
+            /*Get their information from the database*/
+            $query = "SELECT * FROM `user` WHERE Email='$Email' and Password='$Password'";
+            $result = mysqli_query($db, $query);
+            $count = mysqli_num_rows($result);
+            
+            /*If it's in there, get the information*/
+            if($count == 1){
+            
+                $rows = mysqli_fetch_assoc($result);
+                $values = array_values($rows);
+                $_SESSION['FirstName'] = $values[2];
+                $_SESSION['LastName'] = $values[3];
+                $_SESSION['Email'] = $values[1];
+                
+                /*Send them to the welcome page*/
+                header("Location: welcome.php");
+             }
+        else 
+            {
+                /*If they're not in there, send them to sign up.*/
+                 header("Location: signin2.html");
+        
+            }
+        }
+    }
+
+
+
