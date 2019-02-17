@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script type = "text/javascript" src = "game.js"></script>
+        <title>Game</title>
+
+    </head>
+    <body>
+        <script type = "text/javascript" src = "game.js"></script>
+        <h1 id="game">Matching Game!</h1>
+        
+        
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shirts.html">Product</a></li>
+            <li><a href="signin.html">Sign In!</a></li>
+            <li><a class="active" href="game.html">Game</a></li>
+            <li style="float:right"><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        </nav>
+        
+        
+        <br /> 
+        <br />
+        <br />
+         
+          
+           <div id="game">
+                <div id="button">
+               <input type="button" id="resetbutton"  value="Play Again!">
+                </div>
+             
+         <div id="memory_board">
+            <div id="card"><img id="img0" onClick="choice(0);" class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img1" onClick="choice(1);" class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+            <div id="card"><img id="img2" onClick="choice(2);" class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img3" onClick="choice(3);" class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+         </div>
+         <div id="memory_board">
+            <div id="card"><img id="img4" onClick="choice(4);" class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+           
+             <div id="card"><img id="img5" onClick="choice(5);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img6" onClick="choice(6);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img7" onClick="choice(7);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+         </div>
+         <div id = "memory_board">
+            <div id="card"><img id="img8" onClick="choice(8);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img9" onClick="choice(9);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img10" onClick="choice(10);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img11" onClick="choice(11);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+         </div>
+         <div id = "memory_board">
+            <div id="card"><img id="img12" onClick="choice(12);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img13" onClick="choice(13);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img14" onClick="choice(14);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+            
+             <div id="card"><img id="img15" onClick="choice(15);"class="border-right" src="https://thumb1.shutterstock.com/display_pic_with_logo/670804/103533200/stock-vector-playing-card-back-side-x-mm-103533200.jpg" alt="" width="130" height="140"/></div>
+         </div>
+      </div>
+    </body>
+    
+</html>
