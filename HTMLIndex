@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KBD T-SHIRTS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Styles.css" />
+    </head>
+    <body>
+        <h1 id="KBD">KBD T-SHIRTS</h1>
+        <h3 id="tag">The best t-shirts around!</h3>
+   
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="active" href="Index.html">Home</a></li>
+            <li><a href="Shirts.html">Product</a></li>
+            <li><a href="Signin.html">Sign In!</a></li>
+            <li><a href="Game.html">Game</a></li>
+            <li style="float:right"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <br />
+        <br />
+        <br />
+        <h1 id="aboutparagraph">We have thousands of products <br /> available to order and customize! </h1>
+        <hr>
+         
+       <img src="https://media.licdn.com/media/AAEAAQAAAAAAAASIAAAAJDZmYzE4N2YxLTA4YWEtNDRhYi05Y2RhLTYzYmQyZDZmNjQxNw.jpg" class="image1" alt="T-Shirt" style="float: right">
+       <h2 id="products">Products</h2>
+        <ul>
+        <li>T-shirts</li>
+        <li>Sweatpants</li>
+        <li>Mugs</li>
+        <li>Keychains</li>
+        <li>Coolie Cups</li>
+        <li>Pens</li>
+        <li>Magnets</li>
+        </ul> 
+    <br />
+    <br />
+    <br />
+         
+    <hr>
+    <img src="http://fashionarrow.com/wp-content/uploads/2017/09/embroidered-shirts-i-will-make-you-belive-you-are-lovely-embroidered-t-shirt-kynwypy-.jpg" class="image2" alt="embroidery" style="float: left"  >
+    <br /><br /> <br /><br />
+    <h2 class="list2">Types Available</h2>
+    <ul class="wholelist">
+    <li>Screen Printing</li>
+    <li>Press Printing</li>
+    <li>Embroidery</li>
+    
+    </ul>
+
+   <br /><br /><br /><br /><br /><br />
+
+
+       
+        
+    <hr> 
+    <br /><br /><br />
+    <footer class="footer">&copy;2018, KBD, Maryville, IL, 62062</footer>
+    </body>
+
+
+</html>
