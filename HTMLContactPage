@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="contact">Contact Us!</h1>
+        
+   <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shirts.html">Product</a></li>
+            <li><a href="signin.html">Sign In!</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li style="float:right"><a class="active"  href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+        <br />
+        <br />
+        <br />
+        <h3 id="contactus">Feel free to call us to place an order, or even stop by to see all the product we offer!
+        </h3>
+        <br /> <br /> <br />
+        <h2 id="contactinfo">Contact Information</h2>
+        <section>
+       <h3 id="allinfo">Owner:<span id="personalinfo"> Gabi Appel</span></h3>
+        <h3 id="allinfo">    Phone Number: <span id="personalinfo">618-977-9564</span></h3>
+        <h3 id="allinfo"> Email Address: <span id="personalinfo">glafkv@mail.umsl.edu</span></h3>
+        <h3 id="allinfo">    Hours of Operation: <span id="personalinfo"> M-F, 10am-5pm </span></h3>
+       <h3 id="allinfo">    Address: <span id="personalinfo">1234 TShirt Dr., Maryville, IL, 62062</span></h3>
+        
+        
+       </section>
+        <br /><br /><br />
+        
+     <footer>&copy;2018, KBD, Maryville, IL, 62062</footer>
+    </body>
+
+</html>
