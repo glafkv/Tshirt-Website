@@ -1,0 +1,46 @@
+<?php session_start();
+$db = mysqli_connect("localhost", "root", "", "hw4"); 
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Welcome!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script type = "text/javascript" src = "registration.js"></script>
+        
+    </head>
+    <body>
+        <h1 id="signin">Welcome!</h1>
+        
+   <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shirts.html">Product</a></li>
+            <li><a class="active"  href="signin.html">Sign In!</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li style="float:right"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <section id="register">
+            
+       
+        <center> <h1 style="color:blueviolet"><?php echo "Welcome back, " . $_SESSION['FirstName'] . "!<br/>"; ?></h1></center>  
+        <center> <h3 style="color:indigo"> Here's your account summary: </h3></center>
+        <center> <h4><?php echo "Name: " . $_SESSION['FirstName'] . " " . $_SESSION['LastName'] . "</br>";
+        ?></h4></center>
+        <center> <h4><?php echo "Email: " . $_SESSION['Email'] . "<br/>"; ?></h4></center>
+        
+    
+   
+            
+            
+            
+        </section>
+    </body>
+</html>
