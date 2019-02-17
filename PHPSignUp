@@ -1,0 +1,117 @@
+<?php
+    session_start();
+    $db = mysqli_connect("localhost", "root", "", "hw4");
+    
+    /*Make sure it connects to the database*/
+    if(mysqli_connect_errno()){
+        print "Connect failed: " . mysqli_connect_error();
+        exit;
+    }
+    
+   if(isset($_POST['Email'])){
+        
+        /*Call variables*/
+        $Email = $_POST['Email'];
+        $FirstName = $_POST['FirstName'];
+        $LastName = $_POST['LastName'];
+        $Password = $_POST['Password'];
+    
+        /*Insert information into the database*/
+        mysqli_query($db,"INSERT INTO User (Email, FirstName, LastName,"
+                   . "Password) VALUES ('$Email','$FirstName', '$LastName',"
+                   . "'$Password')");
+    
+        /*Get information to display*/
+        $check_query = "SELECT * FROM `user` WHERE Email='$Email'";
+        $result = mysqli_query($db, $check_query);
+        $count = mysqli_num_rows($result);
+    
+        /*Display their name and email into thanks.php*/
+        if($count == 1){
+            $rows = mysqli_fetch_assoc($result);
+            $values = array_values($rows);
+            $_SESSION['FirstName'] = $values[2];
+            $_SESSION['LastName'] = $values[3];
+            $_SESSION['Email'] = $values[1];
+        
+            header("Location: thanks.php");
+        }
+        else {
+            /*If they're not in there, send back to sign up.*/
+            header("Location: signup.php");
+        }
+      }
+      
+ ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Sign Up!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="Styles.css" />
+        <script type = "text/javascript" src = "registration.js"></script>
+        
+    </head>
+    <body>
+        <h1 id="registration">Sign Up!</h1>
+        
+   <nav id="nav_menu">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Shirts.html">Product</a></li>
+            <li><a class="active"  href="signup.html">Sign Up!</a></li>
+            <li><a href="Game.html">Game</a></li>
+            <li style="float:right"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        <br />
+        <br />
+        <br />
+        <h2 id="registerhere">Sign up to easily access your orders next time!
+        </h2>
+        <br />
+        <br />
+        <br />
+        <section id="register">
+
+
+
+
+<form method="POST" action="signup.php">
+            <p>
+                
+                
+        <label> First Name:</label>
+            <input type="text" name="FirstName" required>
+            <span id="firstnameerror">*</span><br>
+        
+        <label>Last Name:</label>
+        <input type="text" name="LastName" required>
+            <span id="lastnamerror">*</span><br>
+        
+            
+        <label>Email:</label>
+        <input type="text" name="Email" required>
+            <span id="email1error">*</span><br>
+        
+
+        
+        <label>Password:</label>
+        <input type="password" name="Password" required>
+            <span id="passworderror">*</span><br>
+        
+       
+         <input type="submit" value="submit">
+   </p>
+    </form>
+     
+        
+       </section> 
+        
+    <br /><br /><br />       
+        <footer>&copy;2018, KBD, Maryville, IL, 62062</footer>
+        <script type = "text/javascript" src = "registrationn.js"></script>
+     </body>
+
+</html>
